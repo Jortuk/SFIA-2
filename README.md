@@ -8,4 +8,4 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
 Create an application that generates 'Objects' upon a set of predefined rules. 
 
 The requirements are, however not limited too:
--
+
