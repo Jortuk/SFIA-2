@@ -21,3 +21,4 @@ The requirements are, however not limited too:
 - Orchestration Tool: Docker Swarm 
 
 ### Project Proposal <a name="pp"></a>
+An application that generates a random meal, more specifically a 'cuisine' and 'drink', shown through a front-end website. This will be split across 4 services:
