@@ -3,6 +3,7 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
 
 ## Index
 1. [Brief](#brief)
+    - [Project Proposal](#pp)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
@@ -18,3 +19,5 @@ The requirements are, however not limited too:
 - Multiple GCP Virtual Machines
 - Containerisation: Docker
 - Orchestration Tool: Docker Swarm 
+
+### Project Proposal 
