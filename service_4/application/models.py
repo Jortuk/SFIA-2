@@ -11,6 +11,7 @@ class Meals(db.Model):
             'Meal: ', str(self.meal)
             ])
 
-    def __init__(self, id, meal):
+    def __init__(self, id, cuisine, drink):
         self.id = id
-        self.meal = meal
+        self.cuisine = cuisine
+        self.drink = drink
