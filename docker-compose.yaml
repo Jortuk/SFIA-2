@@ -1,0 +1,55 @@
+version: '3.7'
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: ./nginx/nginx.conf
+      target: /etc/nginx/nginx.conf
+    environment:
+      SFIA2_DB_URI: ${SFIA2_DB_URI}
+      SECRET_KEY: ${SECRET_KEY}
+  service_1:
+    image: jortuk/service_1:latest
+    build: ./service_1
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
+    environment:
+      SFIA2_DB_URI: ${SFIA2_DB_URI}
+      SECRET_KEY: ${SECRET_KEY}
+  service_2:
+    image: jortuk/service_2:latest
+    build: ./service_2
+    ports:
+    - target: 5001
+      published: 5001
+      protocol: tcp
+    environment:
+      SFIA2_DB_URI: ${SFIA2_DB_URI}
+      SECRET_KEY: ${SECRET_KEY}
+  service_3:
+    image: jortuk/service_3:latest
+    build: ./service_3
+    ports:
+    - target: 5002
+      published: 5002
+      protocol: tcp
+    environment:
+      SFIA2_DB_URI: ${SFIA2_DB_URI}
+      SECRET_KEY: ${SECRET_KEY}
+  service_4:
+    image: jortuk/service_4:latest
+    build: ./service_4
+    ports:
+    - target: 5003
+      published: 5003
+      protocol: tcp
+    environment: 
+      SFIA2_DB_URI: ${SFIA2_DB_URI}
+      SECRET_KEY: ${SECRET_KEY}
