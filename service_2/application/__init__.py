@@ -1,4 +1,5 @@
 from flask import Flask, request
+import requests
 from flask_sqlalchemy import SQLAlchemy
 from os import getenv
 import random
@@ -10,10 +11,14 @@ app.config['SECRET_KEY'] = getenv('SECRET_KEY')
 db = SQLAlchemy(app)
 
 @app.route('/', methods=['GET', 'POST'])
-def home(id):
-    # food = request.args.get("food")
-    # print(food)
+def western(id):
     rand = random.randint(1, 10)
     getCuisine = Western.query.filter_by(id=rand).first()
     return getCuisine
+
+# @app.route('/eastern', methods=['GET', 'POST'])
+# def eastern(id):
+#     rand = random.randint(1, 10)
+#     getCuisine = Eastern.query.filter_by(id=rand).first()
+#     return getCuisine
     

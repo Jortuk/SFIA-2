@@ -1,16 +1,23 @@
 from flask import Flask, request
-from random import choice
+import requests
+from flask_sqlalchemy import SQLAlchemy
+from os import getenv
+import random
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI']=getenv('SFIA2_DB_URI')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = getenv('SECRET_KEY')
+db = SQLAlchemy(app)
 
 @app.route('/', methods=['GET', 'POST'])
-def home():
-    soft_drink = ["Coke", "Diet Coke", "Orange Juice", "Apple Juice", "Still Water", "Sparkling Water", "Sprite", "Fanta"]
-    alco_drink = ["Beer", "Lager", "Red Wine", "White Wine", "Rose", "Ale", "Cider", "IPA"]
-    drink = request.args.get("drink")
-    print(drink)
-    if perk == "soft":
-        bev = choice(soft_drink)
-    else:
-        bev = choice(alco_drink)
-    return bev
+def soft(id):
+    rand = random.randint(1, 8)
+    getDrink = Soft.query.filter_by(id=rand).first()
+    return getDrink
+
+# @app.route('/alco', methods=['GET', 'POST'])
+# def alco(id):
+#     rand = random.randint(1, 8)
+#     getDrink = Alco.query.filter_by(id=rand).first()
+#     return getDrink
