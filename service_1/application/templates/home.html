@@ -14,7 +14,7 @@
         <h2>Random Meal Generator</h2>
         <p>Bored of your daily food and drink routine?</p>
         <p>Try this!:</p>
-        {{ meal }}
+        <p>{{ meal }}</p>
         <br>
         <p>Not happy with this option?</p>
         <p>Click the button below to generate a new meal!</p>
@@ -22,17 +22,17 @@
         <button onClick="window.location.reload();">Generate</button>
         <br>
         <h4>Why not choose from some previously generated meals?</h4>
-        <table>
+        <table style="margin-left:auto;margin-right:auto;">
             <tr>
                 <th>ID</th>
                 <th>Cuisine</th>
                 <th>Drink</th>
             </tr>
-            {% for meal in meals %}
+            {% for m in meals %}
             <tr>
-                <td>{{ meal.id }}</td>
-                <td>{{ meal.cuisine }}</td>
-                <td>{{ meal.drink }}</td>
+                <td>{{ m.id }}</td>
+                <td>{{ m.cuisine }}</td>
+                <td>{{ m.drink }}</td>
             </tr>
             {% endfor %}
         </table>
