@@ -17,8 +17,8 @@ services:
     image: jortuk/service_1:latest
     build: ./service_1
     ports:
-    - target: 5000
-      published: 5000
+    - target: 5001
+      published: 5001
       protocol: tcp
     environment:
       SFIA2_DB_URI: ${SFIA2_DB_URI}
@@ -27,8 +27,8 @@ services:
     image: jortuk/service_2:latest
     build: ./service_2
     ports:
-    - target: 5001
-      published: 5001
+    - target: 5002
+      published: 5002
       protocol: tcp
     environment:
       SFIA2_DB_URI: ${SFIA2_DB_URI}
@@ -37,8 +37,8 @@ services:
     image: jortuk/service_3:latest
     build: ./service_3
     ports:
-    - target: 5002
-      published: 5002
+    - target: 5003
+      published: 5003
       protocol: tcp
     environment:
       SFIA2_DB_URI: ${SFIA2_DB_URI}
@@ -47,8 +47,8 @@ services:
     image: jortuk/service_4:latest
     build: ./service_4
     ports:
-    - target: 5003
-      published: 5003
+    - target: 5004
+      published: 5004
       protocol: tcp
     environment: 
       SFIA2_DB_URI: ${SFIA2_DB_URI}
