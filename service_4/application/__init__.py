@@ -12,10 +12,10 @@ db = SQLAlchemy(app)
 from application.models import Meals
 import requests
 
-@app.route('/output', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def meals():
-    food = requests.get("http://service_2:5002/cuisine").text
-    bev = requests.get("http://service_3:5003/drink").text
+    food = requests.get("http://service2:5002/").text
+    bev = requests.get("http://service3:5003/").text
     output = Meals(
         cuisine = food,
         drink = bev

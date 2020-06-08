@@ -16,5 +16,5 @@ from application.models import Meals
 @app.route('/home')
 def home():
     mealData = Meals.query.all()
-    meal = requests.get("http://service_4:5004/output").text
-    return render_template('home.html', title = 'RMG', meals = mealData)
+    display = requests.get("http://service4:5004/").text
+    return render_template('home.html', title = 'RMG', meals = mealData, display = display)
