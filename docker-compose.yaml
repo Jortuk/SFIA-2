@@ -13,7 +13,7 @@ services:
     environment:
       SFIA2_DB_URI: ${SFIA2_DB_URI}
       SECRET_KEY: ${SECRET_KEY}
-  service_1:
+  service1:
     image: jortuk/service_1:latest
     build: ./service_1
     ports:
@@ -23,7 +23,7 @@ services:
     environment:
       SFIA2_DB_URI: ${SFIA2_DB_URI}
       SECRET_KEY: ${SECRET_KEY}
-  service_2:
+  service2:
     image: jortuk/service_2:latest
     build: ./service_2
     ports:
@@ -33,7 +33,7 @@ services:
     environment:
       SFIA2_DB_URI: ${SFIA2_DB_URI}
       SECRET_KEY: ${SECRET_KEY}
-  service_3:
+  service3:
     image: jortuk/service_3:latest
     build: ./service_3
     ports:
@@ -43,7 +43,7 @@ services:
     environment:
       SFIA2_DB_URI: ${SFIA2_DB_URI}
       SECRET_KEY: ${SECRET_KEY}
-  service_4:
+  service4:
     image: jortuk/service_4:latest
     build: ./service_4
     ports:
