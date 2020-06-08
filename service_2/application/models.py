@@ -6,13 +6,7 @@ class Western(db.Model):
     type = db.Column(db.String(30), nullable=False)
 
     def __repr__(self):
-        return ''.join([
-            'Cuisine: ', str(self.type)
-            ])
-    
-    def __init__(self, id, type):
-        self.id = id
-        self.type = type
+        return str(self.type)
 
 class Eastern(db.Model):
     __tablename__ = 'eastern_cuisine'
@@ -20,10 +14,4 @@ class Eastern(db.Model):
     type = db.Column(db.String(30), nullable=False)
 
     def __repr__(self):
-        return ''.join([
-            'Cuisine: ', str(self.type)
-            ])
-
-    def __init__(self, id, type):
-        self.id = id
-        self.type = type
+        return str(self.type)

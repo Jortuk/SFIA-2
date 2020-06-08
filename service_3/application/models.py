@@ -6,13 +6,7 @@ class Soft(db.Model):
     type = db.Column(db.String(30), nullable=False)
 
     def __repr__(self):
-        return ''.join([
-            'Drink: ', str(self.type)
-            ])
-    
-    def __init__(self, id, type):
-        self.id = id
-        self.type = type
+        return str(self.type)
 
 class Alco(db.Model):
     __tablename__ = 'alco_drinks'
@@ -20,10 +14,4 @@ class Alco(db.Model):
     type = db.Column(db.String(30), nullable=False)
 
     def __repr__(self):
-        return ''.join([
-            'Drink: ', str(self.type)
-            ])
-    
-    def __init__(self, id, type):
-        self.id = id
-        self.type = type
+        return str(self.type)

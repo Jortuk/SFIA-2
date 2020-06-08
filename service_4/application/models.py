@@ -5,13 +5,3 @@ class Meals(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     cuisine = db.Column(db.String(30), nullable=False)
     drink = db.Column(db.String(30), nullable=False)
-
-    def __repr__(self):
-        return ''.join([
-            'Meal: ', str(self.meal)
-            ])
-
-    def __init__(self, id, cuisine, drink):
-        self.id = id
-        self.cuisine = cuisine
-        self.drink = drink
