@@ -11,6 +11,11 @@ pipeline{
                 sh './scripts/vars.sh'
             }
         }
+        stage("Install Ansible and Run Playbook")
+            steps{
+                sh './scripts/ansible.sh'
+            }
+        }
         stage("Deploy Stack"){
             steps{
                 sh './scripts/docker.sh'
