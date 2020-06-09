@@ -1,4 +1,7 @@
 version: '3.7'
+networks:
+  sfia2_overlay:
+    driver: overlay
 services:
   nginx:
     image: nginx:latest
@@ -13,6 +16,10 @@ services:
     environment:
       SFIA2_DB_URI: ${SFIA2_DB_URI}
       SECRET_KEY: ${SECRET_KEY}
+    networks:
+    - sfia2_overlay
+    deploy:
+      replicas: 3
   service1:
     image: jortuk/service_1:latest
     build: ./service_1
@@ -23,6 +30,10 @@ services:
     environment:
       SFIA2_DB_URI: ${SFIA2_DB_URI}
       SECRET_KEY: ${SECRET_KEY}
+    networks: 
+    - sfia2_overlay
+    deploy:
+      replicas: 3
   service2:
     image: jortuk/service_2:latest
     build: ./service_2
@@ -33,6 +44,10 @@ services:
     environment:
       SFIA2_DB_URI: ${SFIA2_DB_URI}
       SECRET_KEY: ${SECRET_KEY}
+    networks: 
+    - sfia2_overlay
+    deploy:
+      replicas: 3
   service3:
     image: jortuk/service_3:latest
     build: ./service_3
@@ -43,6 +58,10 @@ services:
     environment:
       SFIA2_DB_URI: ${SFIA2_DB_URI}
       SECRET_KEY: ${SECRET_KEY}
+    networks: 
+    - sfia2_overlay
+    deploy:
+      replicas: 3
   service4:
     image: jortuk/service_4:latest
     build: ./service_4
@@ -53,3 +72,7 @@ services:
     environment: 
       SFIA2_DB_URI: ${SFIA2_DB_URI}
       SECRET_KEY: ${SECRET_KEY}
+    networks: 
+    - sfia2_overlay
+    deploy:
+      replicas: 3
