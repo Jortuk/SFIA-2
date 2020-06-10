@@ -1,5 +1,5 @@
 from application import db
-from application.models import Soft, Alco
+from application.models import Soft
 
 db.drop_all()
 db.create_all()
