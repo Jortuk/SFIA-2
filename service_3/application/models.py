@@ -1,9 +1,13 @@
 from application import db
 
-class Soft(db.Model):
-    __tablename__ = 'soft_drinks'
+class Drink(db.Model):
+    __tablename__ = 'drink'
     id = db.Column(db.Integer, primary_key=True)
-    type = db.Column(db.String(30), nullable=False)
+    drink = db.Column(db.String(30), nullable=False)
 
     def __repr__(self):
-        return str(self.type)
+        return str(self.drink)
+
+    def __init__(self, id, drink):
+        self.id = id
+        self.drink = drink
