@@ -14,7 +14,7 @@ from application.models import Food
 
 @app.route('/', methods=['GET', 'POST'])
 def food():
-    rand = random.randint(1, 10)
+    rand = random.randint(1, 20)
     getFood = Food.query.filter_by(id=rand).first()
     print(getFood)
     return str(getFood)
