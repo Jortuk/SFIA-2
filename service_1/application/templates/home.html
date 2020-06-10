@@ -12,8 +12,8 @@
     </head>
     <body style="text-align: center;">
         <h2>Random Meal Generator</h2>
-        <p>Bored of your daily food and drink routine?</p>
-        <p>Try this!:</p>
+        <p>Not sure what to eat and drink?</p>
+        <p>We'll choose for you:</p>
         <p>{{ display }}</p>
         <p>Not happy with this option?</p>
         <p>Click the button below to generate a new meal!</p>
@@ -24,13 +24,13 @@
         <table style="margin-left:auto;margin-right:auto;">
             <tr>
                 <th>ID</th>
-                <th>Cuisine</th>
+                <th>Food</th>
                 <th>Drink</th>
             </tr>
             {% for m in meals %}
             <tr>
                 <td>{{ m.id }}</td>
-                <td>{{ m.cuisine }}</td>
+                <td>{{ m.food }}</td>
                 <td>{{ m.drink }}</td>
             </tr>
             {% endfor %}
