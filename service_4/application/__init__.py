@@ -15,11 +15,11 @@ from application.models import Meals
 @app.route('/', methods=['GET', 'POST'])
 def meals():
     food = requests.get("http://service2:5002/").text
-    bev = requests.get("http://service3:5003/").text
+    drink = requests.get("http://service3:5003/").text
     output = Meals(
-        cuisine = food,
-        drink = bev
+        food = food,
+        drink = drink
     )
     db.session.add(output)
     db.session.commit()
-    return "Your cuisine is " + food + ", and your drink is " + bev + "!"
+    return "Your food is " + food + ", and your drink is " + drink + "!"

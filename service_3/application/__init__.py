@@ -10,11 +10,11 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = getenv('SECRET_KEY')
 db = SQLAlchemy(app)
 
-from application.models import Soft
+from application.models import Drink 
 
 @app.route('/', methods=['GET', 'POST'])
 def drink():
     rand = random.randint(1, 8)
-    getDrink = Soft.query.filter_by(id=rand).first()
+    getDrink = Drink.query.filter_by(id=rand).first()
     print(getDrink)
     return str(getDrink)
