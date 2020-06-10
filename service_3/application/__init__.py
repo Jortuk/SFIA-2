@@ -13,14 +13,8 @@ db = SQLAlchemy(app)
 from application.models import Soft
 
 @app.route('/', methods=['GET', 'POST'])
-def soft():
+def drink():
     rand = random.randint(1, 8)
     getDrink = Soft.query.filter_by(id=rand).first()
     print(getDrink)
     return str(getDrink)
-
-# @app.route('/alco', methods=['GET', 'POST'])
-# def alco(id):
-#     rand = random.randint(1, 8)
-#     getDrink = Alco.query.filter_by(id=rand).first()
-#     return getDrink

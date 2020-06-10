@@ -1,4 +1,5 @@
 from flask import Flask, request
+import requests
 from flask_sqlalchemy import SQLAlchemy
 from os import getenv
 import random
@@ -10,7 +11,6 @@ app.config['SECRET_KEY'] = getenv('SECRET_KEY')
 db = SQLAlchemy(app)
 
 from application.models import Meals
-import requests
 
 @app.route('/', methods=['GET', 'POST'])
 def meals():

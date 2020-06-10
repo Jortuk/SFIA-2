@@ -13,15 +13,8 @@ db = SQLAlchemy(app)
 from application.models import Western
 
 @app.route('/', methods=['GET', 'POST'])
-def western():
+def food():
     rand = random.randint(1, 10)
     getCuisine = Western.query.filter_by(id=rand).first()
     print(getCuisine)
     return str(getCuisine)
-
-# @app.route('/eastern', methods=['GET', 'POST'])
-# def eastern(id):
-#     rand = random.randint(1, 10)
-#     getCuisine = Eastern.query.filter_by(id=rand).first()
-#     return getCuisine
-    
