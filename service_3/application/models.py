@@ -7,7 +7,3 @@ class Drink(db.Model):
 
     def __repr__(self):
         return str(self.drink)
-
-    def __init__(self, id, drink):
-        self.id = id
-        self.drink = drink
