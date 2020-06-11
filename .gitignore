@@ -1,4 +1,7 @@
 __pycache__/
 *.pyc/
 venv/
-.coverage/
+service_1/.coverage
+service_2/.coverage
+service_3/.coverage
+service_4/.coverage
