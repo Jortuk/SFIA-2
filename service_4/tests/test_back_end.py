@@ -1,7 +1,7 @@
 import pytest, unittest
 
 from application import app, db
-from application.models import Meals
+from application.models import Chow
 from flask import abort, url_for
 from flask_testing import TestCase
 from os import getenv
@@ -28,12 +28,12 @@ class TestBase(TestCase):
 
 class TestViews(TestBase):
 
-    def test_meals_view(self):
+    def test_chow_view(self):
         response = self.client.post(
-            url_for('meals'),
+            url_for('chow'),
             data=dict(
-                food = "Pizza",
-                drink = "Red Bull"
+                cuisine = "Mexican",
+                dessert = "Chocolate Mousse"
             ),
         )
-        self.assertIn(b"Pizza", response.data)
+        self.assertIn(b"Mexican", response.data)

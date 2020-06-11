@@ -1,7 +1,7 @@
 import pytest, unittest
 
 from application import app, db
-from application.models import Food
+from application.models import Cuisine
 from flask import abort, url_for
 from flask_testing import TestCase
 from os import getenv
@@ -28,13 +28,13 @@ class TestBase(TestCase):
 
 class TestViews(TestBase):
 
-    def test_food_view(self):
-        response = self.client.get(url_for('food'))
+    def test_cuisine_view(self):
+        response = self.client.get(url_for('cuisine'))
         self.assertEqual(response.status_code, 200)
 
 class TestRepr(TestBase):
 
-    def test_food_repr(self):
-        f = Food()
-        assert f == 'Test Food'
+    def test_cuisine_repr(self):
+        f = Cuisine()
+        assert f == 'Test Cuisine'
 
