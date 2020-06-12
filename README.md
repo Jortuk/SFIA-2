@@ -5,6 +5,7 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
 1. [Brief](#brief)
     - [Project Proposal](#pp)
 2. [Trello Board](#tb)
+    - [Initial Board](#ib)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
@@ -35,4 +36,7 @@ The above diagram demonstrates how I imagined the user-interface would look like
 ## Trello Board <a name="tb"></a>
 A kanban-style Trello Board was used for project tracking. Agile methodology was implemented where possibe, in line with the project brief (i.e. Product and Sprint backlogs). However, due to the individual nature of the project, no scrum activities were carried out. Therefore, the work conducted can be described as a single sprint.
 
-The trello board can be accessed <a href="https://trello.com/b/RpOSyLLh/sfia2-project">here</a>.
+The Trello Board can be accessed <a href="https://trello.com/b/RpOSyLLh/sfia2-project">here</a>.
+
+### Initial Board <a name="ib"></a>
+![](documentation/images/initial_board.PNG)
