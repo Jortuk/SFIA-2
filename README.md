@@ -28,3 +28,5 @@ An application that generates a random meal, more specifically 'food' and 'drink
 - Service 4: Collects and formats the data from Services 2 & 3, returning it to Service 1 to be displayed. 
 
 #<p align="center">![](documentation/images/proposalimage.PNG)</p>
+
+The above diagram demonstrates how I imagined the user-interface would look like. The 'Generate' button refreshes the page, which re-runs the functions in all services to produce a new outcome. Then, previously generated objects are stored in an external MySQL database, fulfilling the persistent data deliverable in the project brief.
