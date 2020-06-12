@@ -27,4 +27,4 @@ An application that generates a random meal, more specifically 'food' and 'drink
 - Service 3: Generates 'drink' for the user.
 - Service 4: Collects and formats the data from Services 2 & 3, returning it to Service 1 to be displayed. 
 
-<p align="center">![](documentation/images/proposalimage.PNG)</p>
+#<p align="center">![](documentation/images/proposalimage.PNG)</p>
