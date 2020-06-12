@@ -6,6 +6,7 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
     - [Project Proposal](#pp)
 2. [Trello Board](#tb)
     - [Initial Board](#ib)
+    - [On-going Changes](#ogc)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
@@ -34,9 +35,14 @@ An application that generates a random meal, more specifically 'food' and 'drink
 The above diagram demonstrates how I imagined the user-interface would look like. The 'Generate' button refreshes the page, which re-runs the functions in all services to produce a new outcome. Then, previously generated objects are stored in an external MySQL database, fulfilling the persistent data deliverable in the project brief.
 
 ## Trello Board <a name="tb"></a>
-A kanban-style Trello Board was used for project tracking. Agile methodology was implemented where possibe, in line with the project brief (i.e. Product and Sprint backlogs). However, due to the individual nature of the project, no scrum activities were carried out. Therefore, the work conducted can be described as a single sprint.
+A kanban-style Trello Board was used for project tracking. Agile methodology was implemented where possible, in line with the project brief (i.e. Product and Sprint backlogs). However, due to the individual nature of the project, no scrum activities were carried out. Therefore, the work conducted can be described as a single sprint.
 
 The Trello Board can be accessed <a href="https://trello.com/b/RpOSyLLh/sfia2-project">here</a>.
 
 ### Initial Board <a name="ib"></a>
 ![](documentation/images/initial_board.PNG)
+
+I started by adding the required lists, then populating the 'Product Backlog' field with user stories and the 'Sprint Backlog' field with tasks that when completed, would satisfy the user stories. Moreover, MoSCoW prioritisation was utilised by labelling tasks with 'MH' for must have, 'SH' for should have, and 'CH' for could have. This helped me to order the tasks that should be completed first, and which tasks could be completed towards the end of the project within the given timescale.
+
+### On-going Changes <a name="ogc"></a>
+![](documentation/images/updated_board.PNG)
