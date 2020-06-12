@@ -21,8 +21,8 @@ The requirements are, however not limited too:
 - Orchestration Tool: Docker Swarm 
 
 ### Project Proposal <a name="pp"></a>
-An application that generates a random meal, more specifically a 'cuisine' and 'drink', shown through a front-end website. This will be split across 4 services:
+An application that generates a random meal, more specifically 'food' and 'drink', shown through a front-end website. This will be split across 4 services:
 - Service 1: The website. This service is accountable for the display of persistent data. Essentially, a flask application with a single HTML template that communicates with all other services.
-- Service 2: Generates a 'cuisine' for the user.
-- Service 3: Generates a 'drink' for the user.
+- Service 2: Generates 'food' for the user.
+- Service 3: Generates 'drink' for the user.
 - Service 4: Collects and formats the data from Services 2 & 3, returning it to Service 1 to be displayed. 
