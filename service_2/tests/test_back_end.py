@@ -1,5 +1,5 @@
 import pytest, unittest
-
+from unittest.mock import patch
 from application import app, db
 from application.models import Food
 from flask import abort, url_for
@@ -38,3 +38,6 @@ class TestRepr(TestBase):
         f = Food()
         assert f == 'Test Food'
 
+    @patch('application.models.Food.__repr__', return_value='Test Food')
+    def test_food_repr_mock(self, __repr__):
+        self.assertEqual(__repr__(), 'Test Food')
