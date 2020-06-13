@@ -12,6 +12,7 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
     - [Risk Assessment Revisit](#riskr)
 4. [Architecture](#arc)
     - [Entity Relationship Diagram](#erd)
+    - [Service Architecture Diagram](#sad)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
@@ -75,3 +76,6 @@ To keep this section concise, both implementations for this project share the ab
 The architecture for the MySQL database encompasses three tables, all made through Flask. The red table represents the first randomly generated object, whereas the green table shows the second randomly generated object. Both these tables were pre-populated with entries respective of their names, for example 'Sushi' in the 'food' table, and 'Fanta' in the 'drink' table. Code was written in Python, using the Random module, to randomly pick an object out of 20 entries for each table. Then, once both objects had been generated they were stored in the blue table that then displays the output onto the HTML front-end. 
 
 Futhermore, previous outputs were displayed on the front-end in a table format to adhere to the persistent data criteria in the project brief.
+
+### Service Architecture Diagram <a name="sad"></a>
+![](documentation/images/flowchart.PNG)
