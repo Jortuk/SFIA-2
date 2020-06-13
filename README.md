@@ -69,3 +69,9 @@ The initial risk assessment was revisited during project progression. A 'Revisit
 ## Architecture <a name="arc"></a>
 ### Entity Relationship Diagram <a name="erd"></a>
 ![](documentation/images/erd.PNG)
+
+To keep this section concise, both implementations for this project share the above ERD, as they have the same structure. The first implementation is on the left of the '/', the second on the right.
+
+The architecture for the MySQL database encompasses three tables, all made through Flask. The red table represents the first randomly generated object, whereas the green table shows the second randomly generated object. Both these tables were pre-populated with entries respective of their names, for example 'Sushi' in the 'food' table, and 'Fanta' in the 'drink' table. Code was written in Python, using the Random module, to randomly pick an object out of 20 entries for each table. Then, once both objects had been generated they were stored in the blue table that then displays the output onto the HTML front-end. 
+
+Futhermore, previous outputs were displayed on the front-end in a table format to adhere to the persistent data criteria in the project brief.
