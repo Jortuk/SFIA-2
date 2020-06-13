@@ -68,3 +68,4 @@ The initial risk assessment was revisited during project progression. A 'Revisit
 
 ## Architecture <a name="arc"></a>
 ### Entity Relationship Diagram <a name="erd"></a>
+![](documentation/images/erd.PNG)
