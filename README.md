@@ -78,4 +78,4 @@ The architecture for the MySQL database encompasses three tables, all made throu
 Futhermore, previous outputs were displayed on the front-end in a table format to adhere to the persistent data criteria in the project brief.
 
 ### Service Architecture Diagram <a name="sad"></a>
-![](documentation/images/flowchart.PNG)
+#<p align="center">![](documentation/images/flowchart.PNG)</p>
