@@ -9,6 +9,8 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
     - [On-going Changes](#ogc)
     - [Final Board](#fb)
 3. [Risk Assessment](#risk)
+    - [Risk Assessment Revisit](#riskr)
+
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
 
@@ -54,3 +56,8 @@ As the project developed, changes were constantly made to the board. This helped
 
 ## Risk Assessment <a name="risk"></a>
 ![](documentation/images/risk_assessment.PNG)
+
+### Risk Assessment Revisit <a name="riskr"></a>
+The initial risk assessment was revisited during project progression. A 'Revisit' column was added, discussing how effective the original solutions had been.
+
+![](documentation/images/risk_assessment_revisit.PNG)
