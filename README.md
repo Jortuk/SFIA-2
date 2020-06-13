@@ -13,6 +13,10 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
 4. [Architecture](#arc)
     - [Entity Relationship Diagram](#erd)
     - [Service Architecture Diagram](#sad)
+        + [Service 1](#s1)
+        + [Service 2](#s2)
+        + [Service 3](#s3)
+        + [Service 4](#s4)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
@@ -79,3 +83,11 @@ Futhermore, previous outputs were displayed on the front-end in a table format t
 
 ### Service Architecture Diagram <a name="sad"></a>
 #<p align="center">![](documentation/images/flowchart.PNG)</p>
+
+#### Service 1 <a name="s1"></a>
+
+#### Service 2 <a name="s2"></a>
+
+#### Service 3 <a name="s3"></a>
+
+#### Service 4 <a name="s4"></a>
