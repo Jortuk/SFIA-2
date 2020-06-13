@@ -10,6 +10,8 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
     - [Final Board](#fb)
 3. [Risk Assessment](#risk)
     - [Risk Assessment Revisit](#riskr)
+4. [Architecture](#arc)
+    - [Entity Relationship Diagram](#erd)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
@@ -55,9 +57,14 @@ As the project developed, changes were constantly made to the board. This helped
 ### Final Board <a name="fb"></a>
 
 ## Risk Assessment <a name="risk"></a>
+The risk assessment involved the following types of risks: Time Management, Security, Computer-related Injuries and Other.
+
 ![](documentation/images/risk_assessment.PNG)
 
 ### Risk Assessment Revisit <a name="riskr"></a>
 The initial risk assessment was revisited during project progression. A 'Revisit' column was added, discussing how effective the original solutions had been.
 
 ![](documentation/images/risk_assessment_revisit.PNG)
+
+## Architecture <a name="arc"></a>
+### Entity Relationship Diagram <a name="erd"></a>
