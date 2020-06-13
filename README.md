@@ -53,3 +53,4 @@ As the project developed, changes were constantly made to the board. This helped
 ### Final Board <a name="fb"></a>
 
 ## Risk Assessment <a name="risk"></a>
+![](documentation/images/risk_assessment.PNG)
