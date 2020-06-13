@@ -85,13 +85,13 @@ Futhermore, previous outputs were displayed on the front-end in a table format t
 #<p align="center">![](documentation/images/flowchart.PNG)</p>
 
 #### Service 1 <a name="s1"></a>
-![](documentation/images/service1.PNG)
+#<p align="center">![](documentation/images/service1.PNG)</p>
 
 #### Service 2 <a name="s2"></a>
-![](documentation/images/service2.PNG)
+#<p align="center">![](documentation/images/service2.PNG)</p>
 
 #### Service 3 <a name="s3"></a>
-![](documentation/images/service3.PNG)
+#<p align="center">![](documentation/images/service3.PNG)</p>
 
 #### Service 4 <a name="s4"></a>
-![](documentation/images/service4.PNG)
+#<p align="center">![](documentation/images/service4.PNG)</p>
