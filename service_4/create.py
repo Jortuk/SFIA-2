@@ -1,5 +1,5 @@
 from application import db
-from application.models import Chow
+from application.models import Meals
 
 db.drop_all()
 db.create_all()

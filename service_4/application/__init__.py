@@ -10,16 +10,16 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = getenv('SECRET_KEY')
 db = SQLAlchemy(app)
 
-from application.models import Chow
+from application.models import Meals
 
 @app.route('/', methods=['GET', 'POST'])
-def chow():
-    cuisine = requests.get("http://service2:5002/").text
-    dessert = requests.get("http://service3:5003/").text
-    output = Chow(
-        cuisine = cuisine,
-        dessert = dessert
+def meals():
+    food = requests.get("http://service2:5002/").text
+    drink = requests.get("http://service3:5003/").text
+    output = Meals(
+        food = food,
+        drink = drink
     )
     db.session.add(output)
     db.session.commit()
-    return "Your cuisine is " + cuisine + ", and your dessert is " + dessert + "!"
+    return "Your food is " + food + ", and your drink is " + drink + "!"
