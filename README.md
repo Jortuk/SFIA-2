@@ -20,6 +20,7 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
     - [System Security](#ss)
 5. [Deployment](#deploy)
     - [List of Tools, Technologies and Languages](#ttl)
+6. [Testing](#testing)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
@@ -135,3 +136,5 @@ What's more, a number of firewall rules were put in place on the GCP VM instance
     - <b>Flask</b>: Connects front-end and back-end
     - <b>MySQLAlchemy</b>: Accesses MySQL Database with query-based functions
     - <b>Jinja2</b>: Allows variables to be passed between Python3 and HTML
+
+## Testing <a name="testing"></a>
