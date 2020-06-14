@@ -1,5 +1,5 @@
 import pytest, unittest
-
+import requests
 from application import app, db
 from application.models import Meals
 from flask import abort, url_for
@@ -26,9 +26,9 @@ class TestBase(TestCase):
         db.session.remove()
         db.drop_all()
 
-class TestViews(TestBase):
+class TestService4(TestBase):
 
-    def test_meals_view(self):
+    def test_meals(self):
         response = self.client.post(
             url_for('meals'),
             data=dict(
@@ -37,3 +37,7 @@ class TestViews(TestBase):
             ),
         )
         self.assertIn(b"Pizza", response.data)
+
+    def test_meals_mock(requests_mock):
+        requests_mock.get('http://service4test.com', text='data')
+        assert 'data' == requests.get('http://service4test.com').text
