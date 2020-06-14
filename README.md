@@ -23,6 +23,9 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
 6. [Testing](#testing)
     - [Pytest](#pytest)
     - [Mocking](#mock)
+7. [Project Retrospective](#retro)
+    - [Notable Accomplishments](#na)
+    - [Project Drawbacks & Future Improvements](#pdfi)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
@@ -153,3 +156,32 @@ The image above is the coverage report for Service 1. Coverage reports for all s
 'Mock Tests' were also used. Mocking, from the requests and unittest modules, allows you to assert a value that should return when testing a HTTP request response. Therefore, as the URLs for this are containerised using Docker, Pytest cannot access them, hence why mocking is used. Below is an example mock test I used for Service 4.
 
 ![](documentation/images/mock_test.PNG)
+
+## Project Retrospective <a name="retro"></a>
+### Notable Accomplishments <a name="na"></a>
+#### Good Use of the Feature Branch Model
+
+In my last project, I thought I had made good use of the Feature Branch Model, however my master branch was several commits ahead of the other branches because I had worked on my README.md after merging the master and developer branches together. This time around, to ensure this did not happen again, I had a seperate 'readme' branch to work on the README.md alone, before merging it with other branches.
+
+#### NGINX
+
+As discussed earlier, my implementation of NGINX, acting as a reverse proxy server, drastically improves my application security because it hides the ports to each service, only exposing port 80 to the open internet. Additionally, no secrets or vulnerable ports have been exposed on my GitHub.
+
+#### Automatisation
+
+There are several layers of automatisation in this project. First, a GitHub Webhook linked to my Jenkins server allowed my project to be automatically built and deployed whenever a new commit was pushed to my GitHub repository. Next, my Ansible Playbook and Inventory files installed all needed dependencies to each node for the application  to run. And finally, my docker-compose file allowed for all my images to be built and deployed with one command, which is run as part of the Jenkins server.
+
+### Project Drawbacks & Future Improvements <a name="pdfi"></a>
+#### Lack of Integration Testing
+
+Even though there was a high percentage of coverage in terms of Unit Testing with Pytest, there was no Integration Testing. This is a disadvantage as it decreases application validity. What's more, there is no way to verify whether the application works in unity. Ultimately, this goes against a TDD approach. In future, I will expand my knowledge on how to carry out Integration Testing, putting some time aside to focus on this as well as testing in general.
+
+#### No CRUD Functionality
+
+As part of the project brief, extra marks were given for creating an application that had Create, Read, Update and Delete functionality. Unfortunately, due to time restrictions, this was not part of the end product. This should be noted for future improvements, as it would greatly improve my application and project.
+
+#### Only Two Nodes
+
+Although extra marks are not given for using 3 or more VMs as nodes, this would be a good addition in future in order to practice what I has been taught to me, and futher demonstrate this way of thinking.
+
+## Installation Guide <a name="install"></a>
