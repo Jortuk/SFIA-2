@@ -67,7 +67,7 @@ The risk assessment involved the following types of risks: Time Management, Secu
 ![](documentation/images/risk_assessment.PNG)
 
 ### Risk Assessment Revisit <a name="riskr"></a>
-The initial risk assessment was revisited during project progression. A 'Revisit' column was added, discussing how effective the original solutions had been.
+The initial risk assessment was revisited after project completion. A 'Revisit' column was added, discussing how effective the original solutions had been.
 
 ![](documentation/images/risk_assessment_revisit.PNG)
 
