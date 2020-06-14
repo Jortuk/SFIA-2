@@ -26,9 +26,9 @@ class TestBase(TestCase):
         db.session.remove()
         db.drop_all()
 
-class TestViews(TestBase):
+class TestService4(TestBase):
 
-    def test_chow_view(self):
+    def test_chow(self):
         response = self.client.post(
             url_for('chow'),
             data=dict(
@@ -37,3 +37,7 @@ class TestViews(TestBase):
             ),
         )
         self.assertIn(b"Mexican", response.data)
+
+    def test_chow_mock(requests_mock):
+        requests_mock.get('http://service4test.com', text='data')
+        assert 'data' == requests.get('http://service4test.com').text
