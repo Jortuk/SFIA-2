@@ -1,7 +1,7 @@
 import pytest, unittest
 import requests
 from application import app, db
-from application.models import Chow
+from application.models import Meals
 from flask import abort, url_for
 from flask_testing import TestCase
 from os import getenv
@@ -28,16 +28,16 @@ class TestBase(TestCase):
 
 class TestService4(TestBase):
 
-    def test_chow(self):
+    def test_meals(self):
         response = self.client.post(
-            url_for('chow'),
+            url_for('meals'),
             data=dict(
-                cuisine = "Mexican",
-                dessert = "Chocolate Mousse"
+                food = "Pizza",
+                drink = "Red Bull"
             ),
         )
-        self.assertIn(b"Mexican", response.data)
+        self.assertIn(b"Pizza", response.data)
 
-    def test_chow_mock(requests_mock):
+    def test_meals_mock(requests_mock):
         requests_mock.get('http://service4test.com', text='data')
         assert 'data' == requests.get('http://service4test.com').text
