@@ -105,3 +105,4 @@ Service 3 follows the same procedure as Service 2.
 Service 4 merges the results of Service 2 & 3 and stores them in a different table. The new entry, consisting of the objects generated in the aforementioned services, is then referenced in Service 1 and displayed to the user. Furthermore, the same entry, along with all other entries, can then be seen in the table that is persisting data.
 
 ### System Security <a name="ss"></a>
+![](documentation/images/nginx.PNG)
