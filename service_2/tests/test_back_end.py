@@ -37,8 +37,7 @@ class TestRepr(TestBase):
     def test_cuisine_repr(self):
         c = Cuisine()
         assert c == 'Test Cuisine'
-
+        
     @patch('application.models.Cuisine.__repr__', return_value='Test Cuisine')
     def test_cuisine_repr_mock(self, __repr__):
-        c = Cuisine()
         self.assertEqual(__repr__(), 'Test Cuisine')
