@@ -1,9 +1,9 @@
 from application import db
 
-class Drink(db.Model):
-    __tablename__ = 'drink'
+class Dessert(db.Model):
+    __tablename__ = 'dessert'
     id = db.Column(db.Integer, primary_key=True)
-    drink = db.Column(db.String(30), nullable=False)
+    dessert = db.Column(db.String(30), nullable=False)
 
     def __repr__(self):
-        return str(self.drink)
+        return str(self.dessert)
