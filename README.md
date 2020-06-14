@@ -105,4 +105,8 @@ Service 3 follows the same procedure as Service 2.
 Service 4 merges the results of Service 2 & 3 and stores them in a different table. The new entry, consisting of the objects generated in the aforementioned services, is then referenced in Service 1 and displayed to the user. Furthermore, the same entry, along with all other entries, can then be seen in the table that is persisting data.
 
 ### System Security <a name="ss"></a>
-![](documentation/images/nginx.PNG)
+#<p align="center">![](documentation/images/nginx.PNG)</p>
+
+In terms of security for the application, several measures were put in place. First, a new tool that we studied during training was NGINX. NGINX allows you to upstream a particular port in use, redirecting or hiding other ports that you don't want the open internet to have access to. So, from the image above, it can be seen that the open internet only have access to port 80 when directing to the server. Ports 5001, 5002, 5003 and 5004, used for the application services, cannot be accessed thus improving security for the application.
+
+What's more, a number of firewall rules were put in place on the GCP VM instances. For example, port 22 was opened up on the worker-node, however on the manager-node had access to it. This was so the manager-node could SSH into the worker-node, to see if the containers had been load-balanced, and so that Ansible (installed on the manager-node) could install dependencies via the Playbook.yaml anb Inventory.cfg. Further more, connection rules were used for the MySQL database so that only the nodes used for this project could access them. 
