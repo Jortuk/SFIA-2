@@ -1,0 +1,4 @@
+- name: add worker-node to swarm
+  shell: "docker swarm join --token {{ hostvars['token']['value'] }} {{ hostvars['manager_hostname']['value'] }}:2377"
+  ignore_errors: true
+  tags: swarm

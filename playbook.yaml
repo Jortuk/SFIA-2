@@ -1,0 +1,17 @@
+- name: install docker for both VMs
+  hosts: all
+  become: true
+  roles:
+  - dockerinstall
+
+- name: initialise docker swarm on manager-node
+  hosts: localhost
+  become: true
+  roles:
+  - dockerinit
+
+- name: add worker-node to swarm
+  hosts: worker_machine
+  become: true
+  roles:
+  - dockeraddswarm
