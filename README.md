@@ -26,6 +26,9 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
 7. [Project Retrospective](#retro)
     - [Notable Accomplishments](#na)
     - [Project Drawbacks & Future Improvements](#pdfi)
+8. [Installation Guide](#install)
+9. [Author](#author)
+10. [Acknowledgements](#ack)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
@@ -185,3 +188,29 @@ As part of the project brief, extra marks were given for creating an application
 Although extra marks are not given for using 3 or more VMs as nodes, this would be a good addition in future in order to practice what I has been taught to me, and futher demonstrate this way of thinking.
 
 ## Installation Guide <a name="install"></a>
+### Prior Requirements
+
+1. Two virtual machines running on Ubuntu 18.04
+2. MySQL Database
+3. Generate and link SSH keys for each virtual machine
+
+### Manager-node
+
+1. Install Jenkins onto this virtual machine
+2. Clone this repository onto the manager-node
+3. You will have to make changes and configure the 'inventory.cfg' file to match the details of your machines
+4. Start and make sure Jenkins is running using the following command: systemctl status jenkins
+
+### Worker-node
+
+1. Make sure you have configured the SSH keys for this machine
+
+Finally, go to the Jenkins server and hit 'Build Now'. If everything is configured correctly, then you should be able to run the application yourself. Enjoy!
+
+## Author <a name="author"></a>
+
+Jordan Taylor
+
+## Acknowledgements <a name="ack"></a>
+
+The QA Academy trainers for their enjoyable and detailed training sessions, as well as my fellow QA Academy Trainees.
