@@ -152,3 +152,4 @@ The image above is the coverage report for Service 1. Coverage reports for all s
 
 'Mock Tests' were also used. Mocking, from the requests and unittest modules, allows you to assert a value that should return when testing a HTTP request response. Therefore, as the URLs for this are containerised using Docker, Pytest cannot access them, hence why mocking is used. Below is an example mock test I used for Service 4.
 
+![](documentation/images/mock_test.PNG)
