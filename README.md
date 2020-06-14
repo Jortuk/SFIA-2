@@ -21,6 +21,8 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
 5. [Deployment](#deploy)
     - [List of Tools, Technologies and Languages](#ttl)
 6. [Testing](#testing)
+    - [Pytest](#pytest)
+    - [Mocking](#mock)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
@@ -138,3 +140,15 @@ What's more, a number of firewall rules were put in place on the GCP VM instance
     - <b>Jinja2</b>: Allows variables to be passed between Python3 and HTML
 
 ## Testing <a name="testing"></a>
+### Pytest <a name="pytest"></a>
+
+As I have experience using Pytest in the last project, I was able to transfer the same skills over to this one. The tests involved testing the URLs to ensure that the VMs were hosting the application, as well as SQL functionality to prove I could connect to my database, and finally, getting responses from each service to make sure the HTTP requests were working properly. Overall, I achieved 100% coverage on all services.
+
+#<p align="center">![](documentation/images/coverage1.PNG)</p>
+
+The image above is the coverage report for Service 1. Coverage reports for all services can be found within their respective folder names, e.g. 'service_3', under the 'test_results' folder.
+
+### Mocking <a name="mock"></a>
+
+'Mock Tests' were also used. Mocking, from the requests and unittest modules, allows you to assert a value that should return when testing a HTTP request response. Therefore, as the URLs for this are containerised using Docker, Pytest cannot access them, hence why mocking is used. Below is an example mock test I used for Service 4.
+
