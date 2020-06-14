@@ -29,6 +29,7 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
 8. [Installation Guide](#install)
 9. [Author](#author)
 10. [Acknowledgements](#ack)
+11. [License](#li)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
