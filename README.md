@@ -72,6 +72,9 @@ I started by adding the required lists, then populating the 'Product Backlog' fi
 As the project developed, changes were constantly made to the board. This helped me to keep track of what was in progress, what was finished, and so on. Firstly, completing tasks labelled with MH were my main focus. At this point, all MH tasks were either 'In Progress', 'In Testing' or 'Completed'. Some SH tasks were completed and others in progress. CH tasks were still to do, following the MoSCoW model. Secondly, a few user stories were either fulfilled or in testing as a result in finalising or testing certain features of the overall application. Finally, several issues were encountered during project progression. These were listed in the 'issues' tab of this repository.
 
 ### Final Board <a name="fb"></a>
+![](documentation/images/final_board.PNG)
+
+By the project due date (15th June), all User Stories were met, and issues had been fixed. Although there were two remaining tasks. First, integration testing, and second, CRUD functionality. These would have improved the quality of my project, however they were not part of the MVP. Using MoSCoW, I was able to complete what was required of me to pass this assignment.
 
 ## Risk Assessment <a name="risk"></a>
 The risk assessment involved the following types of risks: Time Management, Security, Computer-related Injuries and Other.
