@@ -19,6 +19,7 @@ Following the QAC Practical Project Specification (DevOps) due 15th June 2020.
         + [Service 4](#s4)
     - [System Security](#ss)
 5. [Deployment](#deploy)
+    - [List of Tools, Technologies and Languages](#ttl)
 
 ## Brief
 Create an application that randomly generates 'Objects' upon a set of predefined rules. 
@@ -115,3 +116,5 @@ What's more, a number of firewall rules were put in place on the GCP VM instance
 
 ## Deployment <a name="deploy"></a>
 ![](documentation/images/ci_pipeline.PNG)
+
+### List of Tools, Technologies and Languages <a name="ttl"></a>
