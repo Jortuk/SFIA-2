@@ -118,3 +118,20 @@ What's more, a number of firewall rules were put in place on the GCP VM instance
 ![](documentation/images/ci_pipeline.PNG)
 
 ### List of Tools, Technologies and Languages <a name="ttl"></a>
+- <b>Trello Board</b>: Project Tracking
+- <b>GitHub</b>: Version Control System
+- <b>Jenkins</b>: CI Server
+- <b>Ansible</b>: Configuration Management
+- <b>Google Cloud Platform</b>: Live Environment & MySQL Database Host
+- <b>MySQL</b>: SQL Database
+- <b>Docker</b>: Containerisation
+- <b>Docker Swarm & Stack</b>: Orchestration
+- <b>DockerHub</b>: Version Control for Docker Images and Containers
+- <b>NGINX</b>: Security and Load-balancing
+- <b>Visual Studio Code</b>: IDE for front-end and back-end development. Used the following languages:
+    - <b>Python3</b>: Logic and Functionality
+    - <b>HTML</b>: Front-end design
+    - <b>CSS</b>: Front-end styling
+    - <b>Flask</b>: Connects front-end and back-end
+    - <b>MySQLAlchemy</b>: Accesses MySQL Database with query-based functions
+    - <b>Jinja2</b>: Allows variables to be passed between Python3 and HTML
