@@ -1,7 +1,7 @@
 import pytest, unittest
 from unittest.mock import patch 
 from application import app, db
-from application.models import Drink
+from application.models import Dessert
 from flask import abort, url_for
 from flask_testing import TestCase
 from os import getenv
@@ -28,17 +28,17 @@ class TestBase(TestCase):
 
 class TestViews(TestBase):
 
-    def test_drink_view(self):
-        response = self.client.get(url_for('drink'))
+    def test_dessert_view(self):
+        response = self.client.get(url_for('dessert'))
         self.assertEqual(response.status_code, 200)
 
 class TestRepr(TestBase):
 
-    def test_drink_repr(self):
-        d = Drink()
-        assert d == 'Test Drink'
+    def test_dessert_repr(self):
+        d = Dessert()
+        assert d == 'Test Dessert'
 
-    @patch('application.models.Drink.__repr__', return_value='Test Drink')
-    def test_drink_repr_mock(self, __repr__):
-        d = Drink()
-        self.assertEqual(__repr__(), 'Test Drink')
+    @patch('application.models.Dessert.__repr__', return_value='Test Dessert')
+    def test_dessert_repr_mock(self, __repr__):
+        d = Dessert()
+        self.assertEqual(__repr__(), 'Test Dessert')

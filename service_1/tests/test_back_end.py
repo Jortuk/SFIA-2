@@ -1,7 +1,7 @@
 import pytest, unittest
 
 from application import app, db
-from application.models import Meals
+from application.models import Chow
 from flask import abort, url_for
 from flask_testing import TestCase
 from os import getenv

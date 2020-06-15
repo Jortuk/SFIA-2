@@ -10,11 +10,11 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = getenv('SECRET_KEY')
 db = SQLAlchemy(app)
 
-from application.models import Meals
+from application.models import Chow
 
 @app.route('/', methods=['GET'])
 @app.route('/home')
 def home():
-    mealData = Meals.query.all()
+    chowData = Chow.query.all()
     display = requests.get("http://service4:5004/").text
-    return render_template('home.html', title = 'RMG', meals = mealData, display = display)
+    return render_template('home.html', title = 'RMG', chow = chowData, display = display)
